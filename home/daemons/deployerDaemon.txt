@@ -3,13 +3,14 @@
 /** @param {NS} ns */
 export async function main(ns) {
 
+	//Oh my god shut up.
 	ns.disableLog('getServerMaxMoney');
 	ns.disableLog('getServerMaxRam');
 	ns.disableLog('scp');
 	ns.disableLog('exec');
 	ns.disableLog('killall');
 	ns.disableLog('getServerMinSecurityLevel');
-	//ns.killall('home');
+	
 
 	let prevTargets = [];
 	let currTargets = ns.read("/data/currtargets.txt").split(",");
