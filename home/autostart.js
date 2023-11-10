@@ -7,14 +7,22 @@ export async function main(ns) {
 	ns.killall(home);
 
 	//Delete Data Directory
-	const dataDir = ns.ls(home,"data/");
+
+	const dataDir = ns.ls(home, "data/");
 	ns.tprint("Preparing to delete", dataDir.toString());
+	canDelete = await ns.prompt("Delete listed files?");
 
-	for(const file of dataDir) {
-	ns.rm(file);
-	}
+	if (canDelete == true) {
+		for (const file of dataDir) {
+			ns.rm(file);
+		}
+	} 
+	else {
+		ns.tprint("Did not delete files. This may cause errors.")
+		}
 
-	await ns.sleep(2000);
+
+	await ns.sleep(5000);
 	ns.tprint("Data directory wiped, reparing to generate new static data.");
 
 	//Generate /data/static/allservers.txt
@@ -35,12 +43,17 @@ export async function main(ns) {
 	ns.tprint("parseDaemon running. Preparing rootDaemon.");
 
 	//Start rootDaemon to nuke initial hosts.
-	ns.exec("/daemons/rootDaemon.js",home);
+	ns.exec("/daemons/rootDaemon.js", home);
 	await ns.sleep(5000);
 	ns.tprint("rootDaemon running.");
-	
+
 
 	// Start earlygame deployerDaemon.
 
-	ns.exec("/daemons/earlyDeployDaemon.js",home);
+	ns.exec("/daemons/earlyDeployDaemon.js", home);
+
+
+
+
+
 }
