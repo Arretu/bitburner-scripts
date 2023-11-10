@@ -1,8 +1,10 @@
 /** @param {NS} ns */
-//import { nap, hasFormulas } from "/shared/lib.js";
+import { hasFormulas } from "/scripts/shared/libs/libFlags.js";
 /** @param {NS} ns */
 export async function main(ns) {
 
+	//and shut up about shutting up
+	ns.disableLog('disableLog');
 	//Oh my god shut up.
 	ns.disableLog('getServerMaxMoney');
 	ns.disableLog('getServerMaxRam');
@@ -10,87 +12,63 @@ export async function main(ns) {
 	ns.disableLog('exec');
 	ns.disableLog('killall');
 	ns.disableLog('getServerMinSecurityLevel');
-	
+	ns.disableLog('sleep');
 
-	let prevTargets = [];
-	let currTargets = ns.read("/data/currtargets.txt").split(",");
-	let previous = "";
-	let haveFormulas = false;
-	let validHosts = [];
-	let allHosts = [];
+
+
 
 	while (true) {
-		currTargets = [];
-		validHosts = [];
-		allHosts = [];
-		currTargets = ns.read("/data/currtargets.txt").split(",");
-		if (currTargets[0] != previous) {
+		let currTargets = ns.read("/data/currtargets.txt").split(",");
+		let prevTargets = ns.read("/data/old/currenttargets.txt").split(",");
 
-			ns.print("DEBUG: CHANGE ALERT");
+		if (currTargets[0] != prevTargets[0]) {
 
-			//DEBUG Switch comments once formulas version done.
-			if (haveFormulas == false) {
-				//if (hasFormulas(ns) == false) {
-				validHosts = [];
+			ns.print("Debug: Target Changed");
+			let hasFormulasFlag = await hasFormulas(ns);
+			await ns.sleep(100);
 
-				validHosts = ns.read("/data/validhosts.txt").split(",");
-				const pServers = ns.getPurchasedServers();
 
-				if (pServers.length > 0) {
-					allHosts = validHosts.concat(",", pServers);
+			//Debug != to test early scripts once you have formulas. == for prod.
+			if (hasFormulasFlag != false) {
+				let target = currTargets[0];
+				const validHosts = ns.read("/data/validhosts.txt").split(",");
+				//This can be made more efficient with a read, but both these scripts run on home anyway.
+				const pHosts = ns.getPurchasedServers();
+				let secThresh = ns.getServerMinSecurityLevel(target) + 5;
+				let monThresh = ns.getServerMaxMoney(target) * 0.75;
+				let allHosts = [];
+				if (pHosts.length > 0) {
+					allHosts = validHosts.concat(",", pHosts);
 				}
 				else {
 					allHosts = validHosts;
 				}
-
-				//Debug
-				//ns.tprint("DEBUG: ",AllHosts.toString());
-
-
-
 				for (const host of allHosts) {
-					//Copy Script
-					ns.print("DEBUG",host);
-					ns.scp("/shared/remotehack.js", host);
-					//Define RAM constraints.
-					let hostRam = ns.getServerMaxRam(host);
-					let scriptRam = ns.getScriptRam("/shared/remotehack.js", host);
-					let threads = parseInt(hostRam / scriptRam);
-
-
-
-					let SecThresh = ns.getServerMinSecurityLevel(currTargets[0]) + 5;
-					let MonThresh = ns.getServerMaxMoney(currTargets[0]) * 0.75;
-
+					ns.scp("/scripts/shared/hgw/remotehack.js", host);
 					ns.killall(host);
-					ns.exec("/shared/remotehack.js", host, threads, currTargets[0], SecThresh, MonThresh);
+					await ns.sleep(100);
+					let threads = (Math.floor(ns.getServerMaxRam(host) / ns.getScriptRam("/scripts/shared/hgw/remotehack.js", host)));
+					await ns.sleep(100);
+
+					ns.exec("/scripts/shared/hgw/remotehack.js", host, threads, target, secThresh, monThresh);
 				}
-				previous = currTargets[0];
-
-				ns.print("DEBUG: previous was ", previous);
-				ns.print(currTargets[0], " has been targetted");
-				await ns.sleep(10000);
-				currTargets = [];
-				await ns.sleep(500);
-				currTargets = ns.read("/data/currtargets.txt").split(",");
-
+				ns.print("Target updated across all hosts, sleeping for 5 minutes.")
 
 			}
+			//DEBUG switch to == for prod
+			else if (hasFormulasFlag != true) {
 
-			else if (haveFormulas == true) {
-				ns.tprint("Not Implemented.");
-				await ns.sleep(10000);
-				currTargets = [];
-				currTargets = ns.read("/data/currtargets.txt").split(",");
 			}
-		}
+			else {
+				ns.print("DEBUG: The formulas flag messed up again.")
+				return;
+			}
+			await ns.sleep(5 * 60000);
 
-		else {
-			prevTargets = currTargets;
-			ns.print("No New Target.")
-			await ns.sleep(10000);
-			currTargets = [];
-			currTargets = ns.read("/data/currtargets.txt").split(",");
+		} else {
+			//Sleep for 5 minutes if target has not changed.
+			ns.print("No new target, sleeping for 5 minutes.")
+			await ns.sleep(5 * 60000);
 		}
 	}
 }
