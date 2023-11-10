@@ -1,5 +1,9 @@
-/** @param {NS} ns */
-//import { nap } from "/shared/lib.js";
+/*
+* Autostart. Run this after aug install to get going.
+* Not sure why I put so many sleeps in?
+* 
+*/
+
 /** @param {NS} ns */
 export async function main(ns) {
 
@@ -16,6 +20,7 @@ export async function main(ns) {
 		for (const file of dataDir) {
 			ns.rm(file);
 		}
+			ns.tprint("Data directory wiped, reparing to generate new static data.");
 	} 
 	else {
 		ns.tprint("Did not delete files. This may cause errors.")
@@ -23,16 +28,16 @@ export async function main(ns) {
 
 
 	await ns.sleep(5000);
-	ns.tprint("Data directory wiped, reparing to generate new static data.");
+
 
 	//Generate /data/static/allservers.txt
-	ns.exec('/scripts/spider.js', 'home');
+	ns.exec('/scripts/local/spider.js', home);
 
 	await ns.sleep(5000);
 	ns.tprint("All remote servers identified. Parsing data to new lists.")
 
 	//Generates allnpc.txt, alltargets.txt, 
-	ns.exec("/scripts/parseServers.js", 'home');
+	ns.exec("/scripts/local/parseServers.js", 'home');
 
 	await ns.sleep(5000);
 	ns.tprint("Static files generated. Initialising daemons.");
@@ -49,11 +54,10 @@ export async function main(ns) {
 
 
 	// Start earlygame deployerDaemon.
-
-	ns.exec("/daemons/earlyDeployDaemon.js", home);
-
-
-
-
-
+	ns.tprint("Starting deployerDaemon")
+	ns.exec("/daemons/deployDaemon.js", home);
+	
+	//And gracefully close.
+	ns.tprint("Script Succesfully finished. Exiting");
+	return;
 }
