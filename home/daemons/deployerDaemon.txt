@@ -1,0 +1,95 @@
+/** @param {NS} ns */
+//import { nap, hasFormulas } from "/shared/lib.js";
+/** @param {NS} ns */
+export async function main(ns) {
+
+	ns.disableLog('getServerMaxMoney');
+	ns.disableLog('getServerMaxRam');
+	ns.disableLog('scp');
+	ns.disableLog('exec');
+	ns.disableLog('killall');
+	ns.disableLog('getServerMinSecurityLevel');
+	//ns.killall('home');
+
+	let prevTargets = [];
+	let currTargets = ns.read("/data/currtargets.txt").split(",");
+	let previous = "";
+	let haveFormulas = false;
+	let validHosts = [];
+	let allHosts = [];
+
+	while (true) {
+		currTargets = [];
+		validHosts = [];
+		allHosts = [];
+		currTargets = ns.read("/data/currtargets.txt").split(",");
+		if (currTargets[0] != previous) {
+
+			ns.print("DEBUG: CHANGE ALERT");
+
+			//DEBUG Switch comments once formulas version done.
+			if (haveFormulas == false) {
+				//if (hasFormulas(ns) == false) {
+				validHosts = [];
+
+				validHosts = ns.read("/data/validhosts.txt").split(",");
+				const pServers = ns.getPurchasedServers();
+
+				if (pServers.length > 0) {
+					allHosts = validHosts.concat(",", pServers);
+				}
+				else {
+					allHosts = validHosts;
+				}
+
+				//Debug
+				//ns.tprint("DEBUG: ",AllHosts.toString());
+
+
+
+				for (const host of allHosts) {
+					//Copy Script
+					ns.print("DEBUG",host);
+					ns.scp("/shared/remotehack.js", host);
+					//Define RAM constraints.
+					let hostRam = ns.getServerMaxRam(host);
+					let scriptRam = ns.getScriptRam("/shared/remotehack.js", host);
+					let threads = parseInt(hostRam / scriptRam);
+
+
+
+					let SecThresh = ns.getServerMinSecurityLevel(currTargets[0]) + 5;
+					let MonThresh = ns.getServerMaxMoney(currTargets[0]) * 0.75;
+
+					ns.killall(host);
+					ns.exec("/shared/remotehack.js", host, threads, currTargets[0], SecThresh, MonThresh);
+				}
+				previous = currTargets[0];
+
+				ns.print("DEBUG: previous was ", previous);
+				ns.print(currTargets[0], " has been targetted");
+				await ns.sleep(10000);
+				currTargets = [];
+				await ns.sleep(500);
+				currTargets = ns.read("/data/currtargets.txt").split(",");
+
+
+			}
+
+			else if (haveFormulas == true) {
+				ns.tprint("Not Implemented.");
+				await ns.sleep(10000);
+				currTargets = [];
+				currTargets = ns.read("/data/currtargets.txt").split(",");
+			}
+		}
+
+		else {
+			prevTargets = currTargets;
+			ns.print("No New Target.")
+			await ns.sleep(10000);
+			currTargets = [];
+			currTargets = ns.read("/data/currtargets.txt").split(",");
+		}
+	}
+}
