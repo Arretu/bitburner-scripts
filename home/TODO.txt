@@ -1,0 +1,23 @@
+start.js  -> run spider, start services etc.
+
+eg exec spider, exec parse, exec parsedaemon
+
+
+
+
+new breach?
+
+
+
+do the batching script :(
+
+balance weighting for server selection:
+
+make fake source file with fewer servers
+for each server print hackchance, key stats and score
+adjust weighting ?
+
+/scripts/shared/batcher/batchgen.js :
+
+you have all the vars, now you need to work out the timings
+

@@ -16,3 +16,4 @@ export async function hasFormulas(ns) {
 	let hasFormulasFlag = ns.fileExists("Formulas.exe","home");
 	return hasFormulasFlag;
 }
+

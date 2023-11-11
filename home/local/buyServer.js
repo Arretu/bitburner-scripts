@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-
+import { updatePersonal } from "/scripts/gentargets.js"
 export async function main(ns) {
 	let MaxServers = ns.getPurchasedServerLimit();
 	const ownedServers = ns.getPurchasedServers();
@@ -11,7 +11,7 @@ export async function main(ns) {
 
 	//Args
 	let mode = ns.args[0];
-	// -h help -c cost for ram -b buy -l list owned -x purge -u upgrade stack -z largest size with X percent of your current money
+	// -h help -c cost for ram -b buy -l list owned -x purge -u upgrade stack
 
 	let ram = ns.args[1];
 	// RAM in Gb default 8
@@ -47,7 +47,7 @@ export async function main(ns) {
 			ns.killall(host);
 			ns.deleteServer(host);
 		}
-		//updatePersonal(ns);
+		updatePersonal(ns);
 		return;
 	}
 
@@ -63,10 +63,6 @@ export async function main(ns) {
 			ns.tprint("You're too broke.");
 			return;
 		}
-
-		else if (mode == "-Z") {
-			
-		}
 		else {
 			while (n > 0) {
 				let j = 0
@@ -77,7 +73,7 @@ export async function main(ns) {
 				ns.tprint("Bought ", j, " servers with ", ram, "RAM each.");
 
 			}
-			//updatePersonal(ns);
+			updatePersonal(ns);
 			return;
 		}
 	}
@@ -117,7 +113,7 @@ export async function main(ns) {
 				ns.tprint("Bought ", j, " servers with ", ram, "RAM each.");
 
 			}
-			//updatePersonal(ns);
+			updatePersonal(ns);
 			return;
 
 

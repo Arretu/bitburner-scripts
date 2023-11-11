@@ -14,10 +14,12 @@ export async function main(ns) {
 	ns.disableLog('getServerMinSecurityLevel');
 	ns.disableLog('sleep');
 
+	let batcherTime = false;
 
 
 
-	while (true) {
+
+	while (batcherTime == false) {
 		let currTargets = ns.read("/data/currtargets.txt").split(",");
 		let prevTargets = ns.read("/data/old/currenttargets.txt").split(",");
 
@@ -29,7 +31,7 @@ export async function main(ns) {
 
 
 			//Debug != to test early scripts once you have formulas. == for prod.
-			if (hasFormulasFlag != false) {
+			if (hasFormulasFlag == false) {
 				let target = currTargets[0];
 				const validHosts = ns.read("/data/validhosts.txt").split(",");
 				//This can be made more efficient with a read, but both these scripts run on home anyway.
@@ -56,7 +58,11 @@ export async function main(ns) {
 
 			}
 			//DEBUG switch to == for prod
-			else if (hasFormulasFlag != true) {
+			else if (hasFormulasFlag == true) {
+
+				ns.tprint("Time to Switch to batchers buddy!");
+				batcherTime = true;
+				return;
 
 			}
 			else {

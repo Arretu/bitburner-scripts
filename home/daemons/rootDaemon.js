@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-import { getPenPower, getPenTools } from '/shared/lib.js';
+import { getPenPower, getPenTools } from '/scripts/shared/libs/libHack.js';
 
 /** @param {NS} ns */
 export async function main(ns) {

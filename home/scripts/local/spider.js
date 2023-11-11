@@ -1,8 +1,7 @@
 /** @param {NS} ns **/
 export async function main(ns) {
-	ns.write("/data/allservers.txt","","w")
-	let servers = ns.scan('home');
 	
+	let servers = ns.scan('home');
 
 	for (let i = 0; i < servers.length; i++) {
 		
@@ -17,7 +16,7 @@ export async function main(ns) {
 
 	//ns.tprint(servers);
 
-	ns.write("/data/static/allservers.txt",servers.toString());
+	ns.write("/data/static/allservers.txt",servers.toString(),"w");
 }
 
 
