@@ -41,7 +41,7 @@ export async function main(ns) {
 	while (true) {
 		await listenPort.nextWrite();
 		let cTarget = ns.getServer(target);
-		if (cTarget.moneyMax - cTarget.moneyAvailable > 0 || cTarget.hackDifficulty - cTarget.minDifficulty) {
+		if (cTarget.moneyMax - cTarget.moneyAvailable > 0 || cTarget.hackDifficulty - cTarget.minDifficulty > 0) {
 			logNum++
 			ns.write("/debug/cbatch-test-2-debug.txt", "------------" + logNum + "------------" + "\n", "a")
 			ns.write("/debug/cbatch-test-2-debug.txt", "Batch on block " + listenPort.read() + " finished." + "\n", "a");
