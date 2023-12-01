@@ -1,0 +1,668 @@
+------------1------------
+Batch on block 0_495 finished.
+Target lost 539510447226.83136 = 10.154331455395727% cash.
+and gained 0 security.
+------------2------------
+Batch on block 0_496 finished.
+Target lost 594294126274.7317 = 1.031104473060391% cash.
+and gained 0 security.
+------------3------------
+Batch on block 1_0 finished.
+Target lost 599833538381.013 = 0.10861597151027094% cash.
+and gained 0.09599999999999653 security.
+------------4------------
+Batch on block 1_1 finished.
+Target lost 599807773502.506 = 0.11290664418643619% cash.
+and gained 0.023999999999993804 security.
+------------5------------
+Batch on block 1_2 finished.
+Target lost 599779535348.9059 = 0.11760919591961483% cash.
+and gained 0 security.
+------------6------------
+Batch on block 1_3 finished.
+Target lost 599749611586.456 = 0.12259245519937424% cash.
+and gained 0 security.
+------------7------------
+Batch on block 1_4 finished.
+Target lost 599718420366.4258 = 0.12778678652465525% cash.
+and gained 0 security.
+------------8------------
+Batch on block 1_5 finished.
+Target lost 599685908004.0979 = 0.13320113011026513% cash.
+and gained 0 security.
+------------9------------
+Batch on block 1_6 finished.
+Target lost 599652018540.8735 = 0.1388448048447506% cash.
+and gained 0 security.
+------------10------------
+Batch on block 1_7 finished.
+Target lost 599616693647.959 = 0.14472752432958738% cash.
+and gained 0 security.
+------------11------------
+Batch on block 1_8 finished.
+Target lost 599579872525.9729 = 0.15085941359773022% cash.
+and gained 0 security.
+------------12------------
+Batch on block 1_9 finished.
+Target lost 599541491800.3019 = 0.15725102654029563% cash.
+and gained 0 security.
+------------13------------
+Batch on block 1_10 finished.
+Target lost 599501485412.0231 = 0.16391336407137483% cash.
+and gained 0 security.
+------------14------------
+Batch on block 1_11 finished.
+Target lost 599459784504.207 = 0.17085789306223875% cash.
+and gained 0 security.
+------------15------------
+Batch on block 1_12 finished.
+Target lost 599416317303.4053 = 0.1780965660775244% cash.
+and gained 0 security.
+------------16------------
+Batch on block 1_13 finished.
+Target lost 599371008996.1163 = 0.18564184194737238% cash.
+and gained 0 security.
+------------17------------
+Batch on block 1_14 finished.
+Target lost 599323781600.022 = 0.19350670721092186% cash.
+and gained 0 security.
+------------18------------
+Batch on block 1_15 finished.
+Target lost 599274553829.7672 = 0.2017046984680699% cash.
+and gained 0 security.
+------------19------------
+Batch on block 1_16 finished.
+Target lost 599223240957.0562 = 0.21024992567796955% cash.
+and gained 0 security.
+------------20------------
+Batch on block 1_17 finished.
+Target lost 599169754664.8225 = 0.21915709644436177% cash.
+and gained 0 security.
+------------21------------
+Batch on block 1_18 finished.
+Target lost 599114002895.2225 = 0.22844154132954408% cash.
+and gained 0 security.
+------------22------------
+Batch on block 1_19 finished.
+Target lost 599055889691.1897 = 0.238119240240542% cash.
+and gained 0 security.
+------------23------------
+Batch on block 1_20 finished.
+Target lost 598995315031.2786 = 0.24820684993290051% cash.
+and gained 0 security.
+------------24------------
+Batch on block 1_21 finished.
+Target lost 598932174657.5131 = 0.25872173267943016% cash.
+and gained 0 security.
+------------25------------
+Batch on block 1_22 finished.
+Target lost 598866359895.9429 = 0.26968198615325584% cash.
+and gained 0 security.
+------------26------------
+Batch on block 1_23 finished.
+Target lost 598797757469.5994 = 0.28110647457659577% cash.
+and gained 0 security.
+------------27------------
+Batch on block 1_24 finished.
+Target lost 598726249303.5294 = 0.2930148611888879% cash.
+and gained 0 security.
+------------28------------
+Batch on block 1_25 finished.
+Target lost 598651712321.5709 = 0.30542764209014045% cash.
+and gained 0 security.
+------------29------------
+Batch on block 1_26 finished.
+Target lost 598574018234.5199 = 0.31836618151776164% cash.
+and gained 0 security.
+------------30------------
+Batch on block 1_27 finished.
+Target lost 598493033319.3265 = 0.33185274861758207% cash.
+and gained 0 security.
+------------31------------
+Batch on block 1_28 finished.
+Target lost 598408618188.9373 = 0.3459105557723576% cash.
+and gained 0 security.
+------------32------------
+Batch on block 1_29 finished.
+Target lost 598320627552.3895 = 0.3605637985537234% cash.
+and gained 0 security.
+------------33------------
+Batch on block 1_30 finished.
+Target lost 598228909964.744 = 0.3758376973663646% cash.
+and gained 0 security.
+------------34------------
+Batch on block 1_31 finished.
+Target lost 598133307566.4259 = 0.3917585408560708% cash.
+and gained 0 security.
+------------35------------
+Batch on block 1_32 finished.
+Target lost 598033655811.5247 = 0.40835373115639767% cash.
+and gained 0 security.
+------------36------------
+Batch on block 1_33 finished.
+Target lost 597929783184.5865 = 0.42565183105180426% cash.
+and gained 0 security.
+------------37------------
+Batch on block 1_34 finished.
+Target lost 597821510905.4105 = 0.4436826131384407% cash.
+and gained 0 security.
+------------38------------
+Batch on block 1_35 finished.
+Target lost 597708652621.3418 = 0.46247711106720457% cash.
+and gained 0 security.
+------------39------------
+Batch on block 1_36 finished.
+Target lost 597591014086.5305 = 0.482067672957258% cash.
+and gained 0 security.
+------------40------------
+Batch on block 1_37 finished.
+Target lost 597468392827.6062 = 0.5024880170719386% cash.
+and gained 0 security.
+------------41------------
+Batch on block 1_38 finished.
+Target lost 597340577795.191 = 0.5237732898528938% cash.
+and gained 0 security.
+------------42------------
+Batch on block 1_39 finished.
+Target lost 597207349000.6522 = 0.5459601264123208% cash.
+and gained 0 security.
+------------43------------
+Batch on block 1_40 finished.
+Target lost 597068477137.4697 = 0.5690867135874296% cash.
+and gained 0 security.
+------------44------------
+Batch on block 1_41 finished.
+Target lost 596923723186.5646 = 0.5931928556656544% cash.
+and gained 0 security.
+------------45------------
+Batch on block 1_42 finished.
+Target lost 596772838004.9128 = 0.6183200428937377% cash.
+and gained 0 security.
+------------46------------
+Batch on block 1_43 finished.
+Target lost 596615561896.7324 = 0.6445115228886011% cash.
+and gained 0 security.
+------------47------------
+Batch on block 1_44 finished.
+Target lost 596451624166.5088 = 0.6718123750729088% cash.
+and gained 0 security.
+------------48------------
+Batch on block 1_45 finished.
+Target lost 596280742653.0875 = 0.700269588263442% cash.
+and gained 0 security.
+------------49------------
+Batch on block 1_46 finished.
+Target lost 596102623244.033 = 0.7299321415458244% cash.
+and gained 0 security.
+------------50------------
+Batch on block 1_47 finished.
+Target lost 595916959369.4178 = 0.7608510885747937% cash.
+and gained 0 security.
+------------51------------
+Batch on block 1_48 finished.
+Target lost 595723431474.1699 = 0.7930796454451137% cash.
+and gained 0 security.
+------------52------------
+Batch on block 1_49 finished.
+Target lost 595521706468.0709 = 0.8266732822843736% cash.
+and gained 0 security.
+------------53------------
+Batch on block 1_50 finished.
+Target lost 595311437152.4589 = 0.8616898187253018% cash.
+and gained 0 security.
+------------54------------
+Batch on block 1_51 finished.
+Target lost 595092261622.6475 = 0.8981895234219313% cash.
+and gained 0 security.
+------------55------------
+Batch on block 1_52 finished.
+Target lost 594863802645.0344 = 0.9362352177808984% cash.
+and gained 0 security.
+------------56------------
+Batch on block 1_53 finished.
+Target lost 594625667007.8267 = 0.9758923840864001% cash.
+and gained 0 security.
+------------57------------
+Batch on block 1_54 finished.
+Target lost 594377444844.2643 = 1.0172292782049208% cash.
+and gained 0 security.
+------------58------------
+Batch on block 1_55 finished.
+Target lost 594118708927.1792 = 1.0603170470637044% cash.
+and gained 0 security.
+------------59------------
+Batch on block 1_56 finished.
+Target lost 593849013933.6738 = 1.1052298511051686% cash.
+and gained 0 security.
+------------60------------
+Batch on block 1_57 finished.
+Target lost 593567895678.6542 = 1.152044991928035% cash.
+and gained 0 security.
+------------61------------
+Batch on block 1_58 finished.
+Target lost 593274870315.8986 = 1.2008430453348422% cash.
+and gained 0 security.
+------------62------------
+Batch on block 1_59 finished.
+Target lost 592969433505.2864 = 1.2517080000148546% cash.
+and gained 0 security.
+------------63------------
+Batch on block 1_60 finished.
+Target lost 592651059544.7539 = 1.3047274021010626% cash.
+and gained 0 security.
+------------64------------
+Batch on block 1_61 finished.
+Target lost 592319200465.4834 = 1.3599925058500606% cash.
+and gained 0 security.
+------------65------------
+Batch on block 1_62 finished.
+Target lost 591973285088.7668 = 1.4175984307041631% cash.
+and gained 0 security.
+------------66------------
+Batch on block 1_63 finished.
+Target lost 591612718042.9233 = 1.4776443250060767% cash.
+and gained 0 security.
+------------67------------
+Batch on block 1_64 finished.
+Target lost 591236878738.5757 = 1.5402335366478992% cash.
+and gained 0 security.
+------------68------------
+Batch on block 1_65 finished.
+Target lost 590845120300.524 = 1.6054737909481869% cash.
+and gained 0 security.
+------------69------------
+Batch on block 1_66 finished.
+Target lost 590436768454.3779 = 1.673477376063199% cash.
+and gained 0 security.
+------------70------------
+Batch on block 1_67 finished.
+Target lost 590011120366.0295 = 1.7443613362514758% cash.
+and gained 0 security.
+------------71------------
+Batch on block 1_68 finished.
+Target lost 589567443431.9728 = 1.818247673324371% cash.
+and gained 0 security.
+------------72------------
+Batch on block 1_69 finished.
+Target lost 589104974018.383 = 1.8952635566292735% cash.
+and gained 0 security.
+------------73------------
+Batch on block 1_70 finished.
+Target lost 588622916146.7908 = 1.975541541926913% cash.
+and gained 0 security.
+------------74------------
+Batch on block 1_71 finished.
+Target lost 588120440124.0841 = 2.0592197995394907% cash.
+and gained 0 security.
+------------75------------
+Batch on block 1_72 finished.
+Target lost 587596681114.4838 = 2.146442352162309% cash.
+and gained 0 security.
+------------76------------
+Batch on block 1_73 finished.
+Target lost 587050737651.033 = 2.237359322748185% cash.
+and gained 0 security.
+------------77------------
+Batch on block 1_74 finished.
+Target lost 586481670084.0385 = 2.332127192891332% cash.
+and gained 0 security.
+------------78------------
+Batch on block 1_75 finished.
+Target lost 585888498963.7947 = 2.4309090721553956% cash.
+and gained 0 security.
+------------79------------
+Batch on block 1_76 finished.
+Target lost 585270203354.8044 = 2.5338749788092088% cash.
+and gained 0 security.
+------------80------------
+Batch on block 1_77 finished.
+Target lost 584625719078.5986 = 2.6412021324534645% cash.
+and gained 0 security.
+------------81------------
+Batch on block 1_78 finished.
+Target lost 583953936882.1266 = 2.7530752590419127% cash.
+and gained 0 security.
+------------82------------
+Batch on block 1_79 finished.
+Target lost 583253700528.5669 = 2.8696869088221706% cash.
+and gained 0 security.
+------------83------------
+Batch on block 1_80 finished.
+Target lost 582523804807.2727 = 2.991237787743234% cash.
+and gained 0 security.
+------------84------------
+Batch on block 1_81 finished.
+Target lost 581762993459.4254 = 3.1179371029002043% cash.
+and gained 0 security.
+------------85------------
+Batch on block 1_82 finished.
+Target lost 580969957015.8262 = 3.2500029226107294% cash.
+and gained 0 security.
+------------86------------
+Batch on block 1_83 finished.
+Target lost 580143330543.1062 = 3.387662551742939% cash.
+and gained 0 security.
+------------87------------
+Batch on block 1_84 finished.
+Target lost 579281691294.473 = 3.5311529229408314% cash.
+and gained 0 security.
+------------88------------
+Batch on block 1_85 finished.
+Target lost 578383556260.9528 = 3.6807210044205076% cash.
+and gained 0 security.
+------------89------------
+Batch on block 1_86 finished.
+Target lost 577447379618.9114 = 3.836624225039118% cash.
+and gained 0 security.
+------------90------------
+Batch on block 1_87 finished.
+Target lost 576471550069.4629 = 3.9991309173681175% cash.
+and gained 0 security.
+------------91------------
+Batch on block 1_88 finished.
+Target lost 575454388065.1854 = 4.1685207795334005% cash.
+and gained 0 security.
+------------92------------
+Batch on block 1_89 finished.
+Target lost 574394142919.37 = 4.345085356617312% cash.
+and gained 0 security.
+------------93------------
+Batch on block 1_90 finished.
+Target lost 573288989792.8298 = 4.529128542450951% cash.
+and gained 0 security.
+------------94------------
+Batch on block 1_91 finished.
+Target lost 572137026553.0812 = 4.720967102660553% cash.
+and gained 0 security.
+------------95------------
+Batch on block 1_92 finished.
+Target lost 570936270500.4906 = 4.92093121986813% cash.
+and gained 0 security.
+------------96------------
+Batch on block 1_93 finished.
+Target lost 569684654955.7555 = 5.129365061984744% cash.
+and gained 0 security.
+------------97------------
+Batch on block 1_94 finished.
+Target lost 568380025702.8422 = 5.346627374574528% cash.
+and gained 0 security.
+------------98------------
+Batch on block 1_95 finished.
+Target lost 567020137281.2601 = 5.573092098309034% cash.
+and gained 0 security.
+------------99------------
+Batch on block 1_96 finished.
+Target lost 565602649121.292 = 5.809149012574596% cash.
+and gained 0 security.
+------------100------------
+Batch on block 1_97 finished.
+Target lost 564125121515.5253 = 6.055204406340503% cash.
+and gained 0 security.
+------------101------------
+Batch on block 1_98 finished.
+Target lost 562585011419.7543 = 6.311681777442566% cash.
+and gained 0 security.
+------------102------------
+Batch on block 1_99 finished.
+Target lost 560979668076.0238 = 6.5790225614857185% cash.
+and gained 0 security.
+------------103------------
+Batch on block 1_100 finished.
+Target lost 559306328450.2812 = 6.857686891620197% cash.
+and gained 0 security.
+------------104------------
+Batch on block 1_101 finished.
+Target lost 557562112476.7853 = 7.148154390498934% cash.
+and gained 0 security.
+------------105------------
+Batch on block 1_102 finished.
+Target lost 555744018101.0852 = 7.450924995779311% cash.
+and gained 0 security.
+------------106------------
+Batch on block 1_103 finished.
+Target lost 553848916113.0402 = 7.766519820590068% cash.
+and gained 0 security.
+------------107------------
+Batch on block 1_104 finished.
+Target lost 551873544760.9839 = 8.095482050444232% cash.
+and gained 0 security.
+------------108------------
+Batch on block 1_105 finished.
+Target lost 549814504137.7666 = 8.438377878142026% cash.
+and gained 0 security.
+------------109------------
+Batch on block 1_106 finished.
+Target lost 547668250329.0104 = 8.79579747827264% cash.
+and gained 0 security.
+------------110------------
+Batch on block 1_107 finished.
+Target lost 545431089313.5065 = 9.168356022992297% cash.
+and gained 0 security.
+------------111------------
+Batch on block 1_108 finished.
+Target lost 543099170605.25665 = 9.556694740826769% cash.
+and gained 0 security.
+------------112------------
+Batch on block 1_109 finished.
+Target lost 540668480626.21643 = 9.961482020320773% cash.
+and gained 0 security.
+------------113------------
+Batch on block 1_110 finished.
+Target lost 538134835798.3307 = 10.38341456043387% cash.
+and gained 0 security.
+------------114------------
+Batch on block 1_111 finished.
+Target lost 535493875342.97614 = 10.823218569662686% cash.
+and gained 0 security.
+------------115------------
+Batch on block 1_112 finished.
+Target lost 532741053775.41394 = 11.281651015953477% cash.
+and gained 0 security.
+------------116------------
+Batch on block 1_113 finished.
+Target lost 529871633081.3359 = 11.759500929556307% cash.
+and gained 0 security.
+------------117------------
+Batch on block 1_114 finished.
+Target lost 526880674562.0394 = 12.257590761063105% cash.
+and gained 0 security.
+------------118------------
+Batch on block 1_115 finished.
+Target lost 523763030334.1942 = 12.77677779696718% cash.
+and gained 0 security.
+------------119------------
+Batch on block 1_116 finished.
+Target lost 520513334469.5712 = 13.31795563518044% cash.
+and gained 0 security.
+------------120------------
+Batch on block 1_117 finished.
+Target lost 517125993759.48425 = 13.882055723047992% cash.
+and gained 0 security.
+------------121------------
+Batch on block 1_118 finished.
+Target lost 513595178088.04803 = 14.470048960507171% cash.
+and gained 0 security.
+------------122------------
+Batch on block 1_119 finished.
+Target lost 509914810397.6837 = 15.082947371150397% cash.
+and gained 0 security.
+------------123------------
+Batch on block 1_120 finished.
+Target lost 506078556229.60144 = 15.72180584406791% cash.
+and gained 0 security.
+------------124------------
+Batch on block 1_121 finished.
+Target lost 502079812821.2568 = 16.38772394946839% cash.
+and gained 0 security.
+------------125------------
+Batch on block 1_122 finished.
+Target lost 497911697742.0172 = 17.08184783120237% cash.
+and gained 0 security.
+------------126------------
+Batch on block 1_123 finished.
+Target lost 493567037047.47754 = 17.805372179445925% cash.
+and gained 0 security.
+------------127------------
+Batch on block 1_124 finished.
+Target lost 489038352932.0378 = 18.559542286939593% cash.
+and gained 0 security.
+------------128------------
+Batch on block 1_125 finished.
+Target lost 484317850858.48956 = 19.34565619232206% cash.
+and gained 0 security.
+------------129------------
+Batch on block 1_126 finished.
+Target lost 479397406142.4626 = 20.165066914247053% cash.
+and gained 0 security.
+------------130------------
+Batch on block 1_127 finished.
+Target lost 474268549968.63574 = 21.019184780129365% cash.
+and gained 0 security.
+------------131------------
+Batch on block 1_128 finished.
+Target lost 468922454814.6512 = 21.909479853527387% cash.
+and gained 0 security.
+------------132------------
+Batch on block 1_129 finished.
+Target lost 463349919257.63806 = 22.837484464340644% cash.
+and gained 0 security.
+------------133------------
+Batch on block 1_130 finished.
+Target lost 457541352137.1985 = 23.804795846176937% cash.
+and gained 0 security.
+------------134------------
+Batch on block 1_131 finished.
+Target lost 451486756047.5979 = 24.813078885428254% cash.
+and gained 0 security.
+------------135------------
+Batch on block 1_132 finished.
+Target lost 445175710130.7467 = 25.8640689867873% cash.
+and gained 0 security.
+------------136------------
+Batch on block 1_133 finished.
+Target lost 438597352140.35724 = 26.959575060136398% cash.
+and gained 0 security.
+------------137------------
+Batch on block 1_134 finished.
+Target lost 431740359746.4065 = 28.101482633949797% cash.
+and gained 0 security.
+------------138------------
+Batch on block 1_135 finished.
+Target lost 424592931047.7274 = 29.29175710056772% cash.
+and gained 0 security.
+------------139------------
+Batch on block 1_136 finished.
+Target lost 417142764259.1844 = 30.53244709892845% cash.
+and gained 0 security.
+------------140------------
+Batch on block 1_137 finished.
+Target lost 409377036538.47736 = 31.825688040579653% cash.
+and gained 0 security.
+------------141------------
+Batch on block 1_138 finished.
+Target lost 401282381916.1278 = 33.17370578503845% cash.
+and gained 0 security.
+------------142------------
+Batch on block 1_139 finished.
+Target lost 392844868290.6611 = 34.57882047082606% cash.
+and gained 0 security.
+------------143------------
+Batch on block 1_140 finished.
+Target lost 384049973449.3954 = 36.04345050877005% cash.
+and gained 0 security.
+------------144------------
+Batch on block 1_141 finished.
+Target lost 374882560073.556 = 37.57011674444858% cash.
+and gained 0 security.
+------------145------------
+Batch on block 1_142 finished.
+Target lost 365326849684.7078 = 39.16144679693916% cash.
+and gained 0 security.
+------------146------------
+Batch on block 1_143 finished.
+Target lost 355366395487.6494 = 40.82017958134133% cash.
+and gained 0 security.
+------------147------------
+Batch on block 1_144 finished.
+Target lost 344984054063.0416 = 42.54917002285549% cash.
+and gained 0 security.
+------------148------------
+Batch on block 1_145 finished.
+Target lost 334161955861.0376 = 44.35139397053304% cash.
+and gained 0 security.
+------------149------------
+Batch on block 1_146 finished.
+Target lost 322881474445.13763 = 46.229953319153765% cash.
+and gained 0 security.
+------------150------------
+Batch on block 1_147 finished.
+Target lost 311123194433.3276 = 48.18808134804728% cash.
+and gained 0 security.
+------------151------------
+Batch on block 1_148 finished.
+Target lost 298866878081.3273 = 50.229148286046076% cash.
+and gained 0 security.
+------------152------------
+Batch on block 1_149 finished.
+Target lost 286091430450.4302 = 52.356667112149445% cash.
+and gained 0 security.
+------------153------------
+Batch on block 1_150 finished.
+Target lost 272774863099.98322 = 54.57429960188161% cash.
+and gained 0 security.
+------------154------------
+Batch on block 1_151 finished.
+Target lost 258894256242.01874 = 56.88586262975066% cash.
+and gained 0 security.
+------------155------------
+Batch on block 1_152 finished.
+Target lost 244425719292.90015 = 59.29533473865558% cash.
+and gained 0 security.
+------------156------------
+Batch on block 1_153 finished.
+Target lost 229344349754.08282 = 61.80686298754894% cash.
+and gained 0 security.
+------------157------------
+Batch on block 1_154 finished.
+Target lost 213624190351.21863 = 64.42477008914071% cash.
+and gained 0 security.
+------------158------------
+Batch on block 1_155 finished.
+Target lost 197238184357.8377 = 67.15356184992794% cash.
+and gained 0 security.
+------------159------------
+Batch on block 1_156 finished.
+Target lost 180158129026.70624 = 69.99793492535635% cash.
+and gained 0 security.
+------------160------------
+Batch on block 1_157 finished.
+Target lost 162354627048.71753 = 72.96278490346076% cash.
+and gained 0 security.
+------------161------------
+Batch on block 1_158 finished.
+Target lost 143797035955.75775 = 76.05321473089904% cash.
+and gained 0 security.
+------------162------------
+Batch on block 1_159 finished.
+Target lost 124453415380.47595 = 79.27454349587968% cash.
+and gained 0 security.
+------------163------------
+Batch on block 1_160 finished.
+Target lost 104290472082.17163 = 82.63231558310203% cash.
+and gained 0 security.
+------------164------------
+Batch on block 1_161 finished.
+Target lost 83273502644.18842 = 86.1323102164649% cash.
+and gained 0 security.
+------------165------------
+Batch on block 1_162 finished.
+Target lost 61366333744.18622 = 89.78055140596818% cash.
+and gained 0 security.
+------------166------------
+Batch on block 1_163 finished.
+Target lost 38531259894.48743 = 93.5833183159276% cash.
+and gained 0 security.
+------------167------------
+Batch on block 1_164 finished.
+Target lost 14728978545.336792 = 97.54715607234843% cash.
+and gained 0 security.
