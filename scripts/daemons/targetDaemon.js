@@ -23,10 +23,10 @@ export async function main(ns) {
 		}
 		else {
 			ns.print("Target changes detected.");
-			targetUpdatePort.clear()
-			targetUpdatePort.write(targetList[0]);
+			//targetUpdatePort.clear()
+			//targetUpdatePort.write(targetList[0]);
 		}
-		ns.write("/data/targetList.txt", targetList.toString(),"w");
+		ns.write("/data/targetList.txt", targetList.toString(), "w");
 		ns.print("Cycle complete. Sleeping 5 minutes.");
 		await ns.sleep(5 * 60000)
 	}
@@ -36,16 +36,19 @@ export function tScan(ns) {
 	const potentialTargets = ns.read("/data/static/potentialTargets.txt").split(",");
 	const scoredTargets = [];
 	const targetList = [];
-	ns.print("DEBUG ", potentialTargets.toString())
+	let pHack = ns.getHackingLevel();
+	//ns.print("DEBUG ", potentialTargets.toString())
 	for (const target of potentialTargets) {
 		if (pHack / 3 > ns.getServerRequiredHackingLevel(target)) {
-			let score = ns.getServerMaxMoney(target) / ns.getServerMinSecurityLevel(target);
-			scoredTargets.push([target, score]);
+			if (ns.hasRootAccess(target) == true) {
+				let score = ns.getServerMaxMoney(target) / ns.getServerMinSecurityLevel(target);
+				scoredTargets.push([target, score]);
+			}
 		}
 	}
 	scoredTargets.sort(function (a, b) { return b[1] - a[1]; });
 	for (const sTarget of scoredTargets) {
-		ns.tprint("DEBUG: ", sTarget.toString())
+		//ns.tprint("DEBUG: ", sTarget.toString())
 		targetList.push(sTarget[0]);
 	}
 	return targetList;

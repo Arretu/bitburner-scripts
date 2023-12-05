@@ -9,10 +9,12 @@ export async function main(ns) {
 	ns.print(batchID);
 
 	await ns.weaken(target, { additionalMsec: time });
-	if (typeof(port) == "number") {
+	if (typeof (port) == "number") {
 		const listenPort = ns.getPortHandle(port);
-		while(listenPort.full()) await ns.sleep(20)
+		while (listenPort.full() == true) {
+			ns.print(batchID, " forced to sleep.")
+			await ns.sleep(20);
+		}
 		listenPort.write(batchID.toString());
-		ns.print("DEBUG: WROTE ", batchID, "TO PORT ",port)
 	}
 }

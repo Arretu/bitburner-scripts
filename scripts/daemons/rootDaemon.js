@@ -2,55 +2,53 @@
 export async function main(ns) {
 
 	const allServers = ns.read("/data/static/npcHosts.txt").split(",");
-	const rootedServers = [];
-
 	let allRooted = false;
-
 	while (allRooted == false) {
-
+		ns.write("/data/rootedHosts.txt", "", "w")
+		const rootedServers = [];
 		const toolSet = toolCheck(ns);
 		await ns.sleep(20);
 		const penStrength = toolSet.length;
-
+		let nextTool;
 		for (const server of allServers) {
-
 			if (ns.hasRootAccess(server) == false) {
 				let serverStrength = ns.getServerNumPortsRequired(server);
 				if (penStrength >= serverStrength) {
-					for (i = 0; i < serverStrength; i++) {
-						const nextTool = toolSet[i];
-						if (nextTool = "ssh") {
+					for (let i = 0; i <= serverStrength; i++) {
+						nextTool = toolSet[i];
+						if (nextTool == "ssh") {
 							ns.brutessh(server);
 						}
-						else if (nextTool = "ftp") {
+						else if (nextTool == "ftp") {
 							ns.ftpcrack(server);
 						}
-						else if (nextTool = "smtp") {
+						else if (nextTool == "smtp") {
 							ns.relaysmtp(server);
 						}
-						else if (nextTool = "http") {
+						else if (nextTool == "http") {
 							ns.httpworm(server);
 						}
-						else if (nextTool = "sql") {
+						else if (nextTool == "sql") {
 							ns.sqlinject(server);
 						}
 					}
-					ns.nuke(target);
+					ns.nuke(server);
 					rootedServers.push(server);
-					ns.tprint(server," rooted.")
+					ns.tprint(server, " rooted.")
 				}
 			}
 			else {
 				rootedServers.push(server);
-				ns.print(server," already rooted.")
+				ns.print(server, " already rooted.")
 			}
 		}
+		ns.write("/data/rootedHosts.txt", rootedServers.toString(), "w");
 		if (rootedServers.length == allServers.length) {
 			ns.tprint("ALL SERVERS ROOTED");
 			allRooted = true;
+		} else {
+			await ns.sleep(10000);
 		}
-		ns.write("/data/rootedHosts.txt",rootedServers.toString(),"w");
-		await ns.sleep(60000);
 	}
 }
 /** @param {NS} ns */
